@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-
+import './HomePage.css';
+import NavBar from '../NavBar';
 
 class HomePage extends Component {
   render(){
 
     return(
-      <h1>SOS IM LOST</h1>
+      <div>
+        <NavBar />
+      </div>
     )
   }
 }
