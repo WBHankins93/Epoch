@@ -29,6 +29,10 @@
   justify-content: center;
 }
 
+Carousel {
+  border: 5px solid black;
+}
+
 .clock {
     background: transparent;
     position: absolute;

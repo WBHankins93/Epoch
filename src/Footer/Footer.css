@@ -1,0 +1,21 @@
+.footerLogo {
+  max-width: 234px;
+  max-height: 65px;
+  float: left;
+  margin: 10px;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.main {
+  background: red;
+}
+
+.test {
+  max-width: 100%;
+  max-height: 101px;
+  padding: 25px;
+  border: 2px solid red;
+}

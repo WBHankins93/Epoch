@@ -27,7 +27,7 @@ class LandingPage extends Component {
           <div>
           <Button size='massive'>Massive</Button>
           </div>
-
+          
       </div>
     );
   }
