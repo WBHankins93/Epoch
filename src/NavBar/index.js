@@ -19,7 +19,7 @@ class NavBar extends Component {
             <img className="logoTitle" src="./images/EpochLogo_1.png"></img>
           </Menu.Item>
           <Menu.Item className="home">
-            <a href="#">Home</a>
+            <a href="/home">Home</a>
           </Menu.Item>
           <Menu.Item className="shop">
             <a href="/shop">Shop</a>
