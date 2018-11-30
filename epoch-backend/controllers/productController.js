@@ -1,0 +1,17 @@
+const express = require('express');
+const router = express.Router();
+
+const Products = require('../models/products');
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = router;
