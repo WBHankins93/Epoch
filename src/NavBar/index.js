@@ -12,7 +12,7 @@ class NavBar extends Component {
     const { activeItem } = this.state
 
     return (
-      <div>
+      <div className="NavBar">
       <Segment>
         <Menu fixed='top' size='large'  >
           <Menu.Item className="work">

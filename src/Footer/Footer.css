@@ -5,6 +5,12 @@
   margin: 10px;
 }
 
+Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 ul {
    list-style-type: none;
 }
@@ -18,7 +24,15 @@ ul {
   max-width: 100%;
   max-height: 101px;
   padding: 25px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
 }
+
+/* .connect {
+  float: left;
+} */
 
 .footer-title {
   color: white;
@@ -26,5 +40,5 @@ ul {
 
 .logoFoot {
   display: block;
-  
+
 }
