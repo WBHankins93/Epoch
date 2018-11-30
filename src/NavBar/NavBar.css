@@ -11,11 +11,20 @@
   padding-top: 2%;
 }
 
-.logoTitle {
-  background-color: red;
-  
+.user {
+  float: right;
 }
 
-.item {
-  width: 20%;
+.work {
+  width: 10%;
 }
+
+.logoTitle {
+  background-color: red;
+  height: 30px;
+  width: 80%;
+}
+
+/* .item {
+  width: 33%;
+} */

@@ -1,5 +1,5 @@
 .footerLogo {
-  max-width: 234px;
+  max-width: 14.63em;
   max-height: 65px;
   float: left;
   margin: 10px;
@@ -14,8 +14,17 @@ ul {
 }
 
 .test {
+  background: black;
   max-width: 100%;
   max-height: 101px;
   padding: 25px;
-  border: 2px solid red;
+}
+
+.footer-title {
+  color: white;
+}
+
+.logoFoot {
+  display: block;
+  
 }

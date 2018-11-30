@@ -15,16 +15,30 @@ class NavBar extends Component {
       <div>
       <Segment>
         <Menu fixed='top' size='large'  >
-          <Menu.Item>
+          <Menu.Item className="work">
             <img className="logoTitle" src="./images/EpochLogo_1.png"></img>
           </Menu.Item>
-          <div className='search-input'>
+          <Menu.Item className="home">
+            <a href="#">Home</a>
+          </Menu.Item>
+          <Menu.Item className="shop">
+            <a href="/shop">Shop</a>
+          </Menu.Item>
 
-          </div>
+
+          <Menu.Item className="user">
+          <Link to='/user'>
+          <Icon className='cursor' size='large' name='user' />
+
+          </Link>
+          </Menu.Item>
+
+
           <Menu.Menu position='right'>
             <Menu.Item>
             <Link to='/cart'>
             <Icon className='cursor' size='large' name='shop' />
+
             </Link>
             {this.props.cartLength > 0 && <Label size='mini' color='red' >{this.props.cartLength}</Label> }
             </Menu.Item>

@@ -1,5 +1,8 @@
 .caroDisplay {
   max-width: 100%;
   max-height: 1000%;
-  border: 5px solid black;
+}
+
+.SHOP {
+  max-width: 1531%;
 }

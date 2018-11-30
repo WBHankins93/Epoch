@@ -5,54 +5,43 @@ import './Footer.css';
 class FooterPage extends React.Component {
 render() {
 return (
-<Footer color="blue" className="font-small pt-4 mt-4">
-  <Container fluid className="text-center text-md-left">
-    <Row>
-
-      <Col md="6">
-      <h5 className="title">Links</h5>
-      <ul>
-        <li className="list-unstyled">
-          <a href="#!">Link 1</a>
-        </li>
-        <li className="list-unstyled">
-          <a href="#!">Link 2</a>
-        </li>
-        <li className="list-unstyled">
-          <a href="#!">Link 3</a>
-        </li>
-        <li className="list-unstyled">
-          <a href="#!">Link 4</a>
-        </li>
-      </ul>
-      </Col>
-    </Row>
-  </Container>
-  <div className="footer-copyright text-center py-3">
-    <Container fluid>
-      &copy; {new Date().getFullYear()} Copyright:{" "}
-      <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-    </Container>
-  </div>
+<Footer className="font-small pt-4 mt-4">
 
   <div className="test">
+  <h1 class="footer-title">STAY CONNECTED</h1>
+  <input class="email-list" id="name" type="text" placeholder="Your Email *"></input>
   </div>
 
-  <div class="ui grid size">
-  <div class="four wide column">
-    <img className="footerLogo" src="./images/EpochLogo_1.png"></img>
+  <div class="ui grid size wholeFoot">
+  <div class="four wide column logoFoot">
+    <img className="footerLogo" src="./images/EpochLogo_1.png"></img><br/>
     <p>
-      Here you can use rows and columns here to organize your footer
-      content.
+      Your time is now.
     </p>
   </div>
-  <div class="four wide column">2</div>
-  <div class="four wide column">3</div>
-  <div class="four wide column">4</div>
+  <div class="four wide column">
+    <p><a href="#">Blog</a></p>
+    <p><a href="#">Careers</a></p>
+    <p><a href="#">Join Us!</a></p>
+  </div>
+  <div class="four wide column">
+    <h3>Customer Care</h3>
+    <p>Order Status</p>
+    <p>FAQs</p>
+    <p>Warranty</p>
+    <p>Returns & Exchanges</p>
+  </div>
+  <div class="four wide column">
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:epoch@epochsales.com"  target="_blank" class="email-link">epoch@epochsales.com</a></p>
+    <p>512-555-5555</p>
+
+  </div>
 </div>
 </Footer>
 );
 }
 }
+
 
 export default FooterPage;
