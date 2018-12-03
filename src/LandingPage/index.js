@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './LandingPage.css';
+import '../App.css';
 import { Button } from 'semantic-ui-react';
 
 class LandingPage extends Component {
@@ -27,7 +27,7 @@ class LandingPage extends Component {
           <div>
           <Button size='massive'>Massive</Button>
           </div>
-          
+
       </div>
     );
   }

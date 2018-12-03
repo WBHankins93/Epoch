@@ -1,56 +1,43 @@
 import React, { Component } from 'react';
-import { Menu, Segment, Icon, Label } from 'semantic-ui-react';
+import { Container, Menu, Segment, Icon, Label } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import './NavBar.css';
+import '../App.css';
 
 class NavBar extends Component {
-  state = { activeItem: 'home' }
+  super(){
+    return(
+      <Container text>
+          <Header
+            as='h1'
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+            content='Shop Epoch Today!'
+            inverted
+            style={{
+              fontSize: mobile ? '2em' : '4em',
+              fontWeight: 'normal',
+              marginBottom: 0,
+              marginTop: mobile ? '1.5em' : '3em',
+            }}
+          />
+          <Header
+            as='h2'
+            content=''
 
-  render() {
-    const { activeItem } = this.state
-
-    return (
-      <div className="NavBar">
-      <Segment>
-        <Menu fixed='top' size='large'  >
-          <Menu.Item className="work">
-            <img className="logoTitle" src="./images/EpochLogo_1.png"></img>
-          </Menu.Item>
-          <Menu.Item className="home">
-            <a href="/home">Home</a>
-          </Menu.Item>
-          <Menu.Item className="shop">
-            <a href="/shop">Shop</a>
-          </Menu.Item>
-
-
-          <Menu.Item className="user">
-          <Link to='/user'>
-          <Icon className='cursor' size='large' name='user' />
-
-          </Link>
-          </Menu.Item>
+            style={{
+              fontSize: mobile ? '1.5em' : '1.7em',
+              fontWeight: 'normal',
+              marginTop: mobile ? '0.5em' : '1.5em',
+            }}
+          />
+          <Button primary href="/shop" size='huge'>
+            Start Here
+            <Icon name='right arrow' />
+          </Button>
+        </Container>
 
 
-          <Menu.Menu position='right'>
-            <Menu.Item>
-            <Link to='/cart'>
-            <Icon className='cursor' size='large' name='shop' />
-
-            </Link>
-            {this.props.cartLength > 0 && <Label size='mini' color='red' >{this.props.cartLength}</Label> }
-            </Menu.Item>
-            <Menu.Item>
-
-            </Menu.Item>
-          </Menu.Menu>
-        </Menu>
-      </Segment>
-      </div>
     )
-  }
-}
 
-export default NavBar;
+
+
+  export NavBar;

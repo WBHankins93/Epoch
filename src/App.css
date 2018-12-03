@@ -45,6 +45,50 @@ Carousel {
     -moz-animation:spin 10s linear infinite;
     animation:spin 10s linear infinite;
 }
+.listBox {
+  background-color: grey;
+
+  float: right;
+  width: 25%;
+  height: 40%;
+}
+.image {
+  width: 75%;
+  height: 30%;
+  margin-top: 15%;
+  justify-content: center;
+}
+
+
+.NavBar {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+}
+
+.logoNav {
+  max-width: 10%;
+  max-height: 20%;
+  float: left;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.user {
+  float: right;
+}
+
+.work {
+  width: 10%;
+}
+
+.logoTitle {
+  background-color: red;
+  height: 30px;
+  width: 80%;
+}
+
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

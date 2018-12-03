@@ -7,12 +7,7 @@ render() {
 return (
 <Footer className="font-small pt-4 mt-4">
 
-  <div className="test">
-    <div className="connect">
-      <label class="footer-title">STAY CONNECTED</label>
-      <input class="email-list" id="name" type="text" placeholder="Your Email *"></input>
-    </div>
-  </div>
+
 
   <div class="ui grid size wholeFoot">
   <div class="four wide column logoFoot">
