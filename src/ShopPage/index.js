@@ -3,19 +3,17 @@ import { connect } from 'react-redux';
 import { Container, Menu, Segment, Icon, Label } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './ShopCSS.css';
-
 import FooterPage from '../Footer';
-import ItemList from '../ItemList';
+import WatchList from '../ShowWatches';
 
-
-export class ShopPage extends Component {
+class ShopPage extends Component {
   render() {
     return (
-      <div>
+      <div className="watchBox">
+        <h1>Shop Our Products!</h1>
 
-
-          <div className="">
-            <ItemList />
+          <div>
+            <WatchList />
           </div>
 
         <FooterPage />

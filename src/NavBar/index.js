@@ -9,9 +9,9 @@ class NavBar extends Component {
       <Container text>
           <Header
             as='h1'
-
-            content='Shop Epoch Today!'
             inverted
+            content='Shop Epoch Today!'
+
             style={{
               fontSize: mobile ? '2em' : '4em',
               fontWeight: 'normal',

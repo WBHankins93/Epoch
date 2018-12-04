@@ -1,0 +1,9 @@
+.watchBox {
+  border: 3px solid black;
+  justify-content: space-between;
+
+}
+
+.watchIMG {
+  align-items: center;
+}

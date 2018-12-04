@@ -5,6 +5,7 @@ import {
   Container,
   Divider,
   Grid,
+  Form,
   Header,
   Icon,
   Image,
@@ -21,6 +22,35 @@ import {
  * such things.
  */
 
+ const HomepageHeading = ({ mobile }) => (
+   <Container text>
+     <Header
+       as='h1'
+       content='Imagine-a-Company'
+
+       style={{
+         fontSize: mobile ? '2em' : '4em',
+         fontWeight: 'normal',
+         marginBottom: 0,
+         marginTop: mobile ? '1.5em' : '3em',
+       }}
+     />
+     <Header
+       as='h2'
+       content='Do whatever you want when you want to.'
+       inverted
+       style={{
+         fontSize: mobile ? '1.5em' : '1.7em',
+         fontWeight: 'normal',
+         marginTop: mobile ? '0.5em' : '1.5em',
+       }}
+     />
+     <Button primary size='huge'>
+       Get Started
+       <Icon name='right arrow' />
+     </Button>
+   </Container>
+ )
 
 
 
@@ -47,13 +77,14 @@ class DesktopContainer extends Component {
         >
           <Segment
 
+            inverted
             textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
           >
             <Menu
               fixed={fixed ? 'top' : null}
-
+              background='grey'
               pointing={!fixed}
               secondary={!fixed}
               size='large'
@@ -181,8 +212,8 @@ const HomepageLayout = () => (
             </Header>
             <Image bordered rounded size='large' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GRfjdRUydyerkVF6L4cVme5zudC2ZjNbASNMIOI5-F7O79J8' />
 
-            <Grid.Column textAlign='center'>
-              <Button hrf="/shop" size='huge'>Shop Mens</Button>
+            <Grid.Column textAlign='left'>
+              <Button href="/shop" size='huge'>Shop Mens</Button>
             </Grid.Column>
           </Grid.Column>
 
@@ -272,9 +303,7 @@ const HomepageLayout = () => (
               <Header style={{width: 75}} as='h4' inverted>
                 <video style={{height: 140, width: 300, color: 'white'}} src="./images/epoch.mov"></video><br/>
               </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
+            
             </Grid.Column>
           </Grid.Row>
         </Grid>
