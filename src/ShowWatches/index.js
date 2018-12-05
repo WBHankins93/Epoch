@@ -12,25 +12,25 @@ class WatchList extends Component {
         name: "Xeric Halograph Chrono Sapphire Gunmetal Green",
         price: "$269.00",
         category: "men",
-        image_url:"https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/300x300/products/5928/34410/xeric-halograph-chrono-sapphire-hgs-3021__10179.1513104857.jpg?c=2"
+        image_url:"https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/210x300/products/5928/34410/xeric-halograph-chrono-sapphire-hgs-3021__10179.1513104857.jpg?c=2"
       },
       {
         name: "Xeric Halograph Chrono Sapphire Mesh Gunmetal Red",
         price: "$269.00",
         category: "men",
-        image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/300x300/products/6584/38124/xeric-halograph-chrono-sapphire-hgs-3017-mesh__06578.1531322437.jpg?c=2"
+        image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/2100x300/products/6584/38124/xeric-halograph-chrono-sapphire-hgs-3017-mesh__06578.1531322437.jpg?c=2"
       },
       {
         name: "Citizen Eco-Drive Calendrier Chrono Brown",
         price: "$300.00",
         category: "men",
-        image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/300x300/products/5953/34877/citizen-eco-drive-BU2020-29X__23252.1516727019.jpg?c=2"
+        image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/210x300/products/5953/34877/citizen-eco-drive-BU2020-29X__23252.1516727019.jpg?c=2"
       },
       {
         name: "Citizen Eco-Drive Promaster Nighthawk Blue Angels Stainless Steel",
         price: "$380.00",
         category: "men",
-        image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/300x300/products/5951/34879/citizen-eco-drive-BJ7006-56L__24900.1516727044.jpg?c=2"
+        image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/210x300/products/5951/34879/citizen-eco-drive-BJ7006-56L__24900.1516727044.jpg?c=2"
       },
       {
         name: "Citizen Eco-Drive Proximity Connected All Black",
@@ -102,9 +102,25 @@ class WatchList extends Component {
   }
   }
 
-  handleClick = (e, item) => {
-    console.log(item)
+  handleClick = async (e, item) => {
+    try {
 
+      const addToCart = await fetch('http://localhost:9000/', {
+        method: 'POST',
+        credentials: 'include',
+        body: JSON.stringify(item.item),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      console.log(addToCart, 'HELLLOOO')
+
+    } catch(err) {
+      console.log(err);
+      return(err);
+
+
+    }
 
   }
 
@@ -115,24 +131,24 @@ class WatchList extends Component {
   const display = this.state.data.map((item) => {
     // console.log(item,'fghjk')
     return (
-      <Card>
-        <Image src={item.image_url} />
-        <Card.Content>
-          <Card.Header>{item.name}</Card.Header>
-          <Card.Meta>
+      <div>
+        <img style={{maxWidth:'50%'}} src={item.image_url} />
+
+          <section>{item.name}</section>
+          <p>
             <span className='date'>{item.price}</span>
-          </Card.Meta>
-          <Card.Description>{item.category}</Card.Description>
+          </p>
+          <div>{item.category}</div>
           <Button color='green' item={item} value={this.state.data.name} onClick={this.handleClick}>Add to Cart</Button>
-        </Card.Content>
-      </Card>
+
+      </div>
     )
   })
     return(
-      <div className="watchContainer">
-      <Card.Group>
-        {display}
-      </Card.Group>
+      <div>
+        <div className="watchContainer">
+          {display}
+        </div>
       </div>
 
     )

@@ -8,13 +8,13 @@ const DisplayWatch = () => {
       name: "Xeric Halograph Chrono Sapphire Gunmetal Green",
       price: "$269.00",
       category: "men",
-      image_url:"https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/300x300/products/5928/34410/xeric-halograph-chrono-sapphire-hgs-3021__10179.1513104857.jpg?c=2"
+      image_url:"https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/150x150/products/5928/34410/xeric-halograph-chrono-sapphire-hgs-3021__10179.1513104857.jpg?c=2"
     },
     {
       name: "Xeric Halograph Chrono Sapphire Mesh Gunmetal Red",
       price: "$269.00",
       category: "men",
-      image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/300x300/products/6584/38124/xeric-halograph-chrono-sapphire-hgs-3017-mesh__06578.1531322437.jpg?c=2"
+      image_url: "https://cdn7.bigcommerce.com/s-z74psfow/images/stencil/products/6584/38124/xeric-halograph-chrono-sapphire-hgs-3017-mesh__06578.1531322437.jpg?c=2"
     },
     {
       name: "Citizen Eco-Drive Calendrier Chrono Brown",

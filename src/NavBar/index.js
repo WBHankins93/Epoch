@@ -21,10 +21,10 @@ class NavBar extends Component {
           <Menu.Item href='/home'>Home</Menu.Item>
           <Menu.Item href='/shop'>Shop</Menu.Item>
           <Menu.Item position='right'>
-            <Button as='a' >
+            <Button href='/login' >
               Log in
             </Button>
-            <Button as='a' style={{ marginLeft: '0.5em' }}>
+            <Button href='/login' style={{ marginLeft: '0.5em' }}>
               Sign Up
             </Button>
           </Menu.Item>

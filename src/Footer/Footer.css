@@ -7,9 +7,8 @@
 
 Footer {
   background: grey;
-  position: absolute;
+  position: relative;
   right: 0;
-  margin-top: 100%;
   bottom: 0;
   left: 0;
   padding: 1rem;

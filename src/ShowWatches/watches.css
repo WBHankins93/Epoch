@@ -1,5 +1,8 @@
 .watchContainer {
-  float: right;
+  display: flex;
+  margin: 20px;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 Card {

@@ -165,3 +165,86 @@ class WatchList extends Component {
   }
 }
 export default WatchList;
+
+
+
+<div>
+<Footer style={{border:'4px solid black'}} className="font-small pt-4 mt-4">
+
+
+
+<div className="ui grid size wholeFoot">
+<div className="four wide column logoFoot">
+  <img className="footerLogo" src="./images/EpochLogo_1.png"></img><br/>
+  <p>
+    Your time is now.
+  </p>
+</div>
+<div className="four wide column">
+  <p><a href="#">Blog</a></p>
+  <p><a href="#">Careers</a></p>
+  <p><a href="#">Join Us!</a></p>
+</div>
+<div className="four wide column">
+  <h3>Customer Care</h3>
+  <p>Order Status</p>
+  <p>FAQs</p>
+  <p>Warranty</p>
+
+</div>
+<div className="four wide column">
+  <h3>Contact Us</h3>
+  <p>Email: <a href="mailto:epoch@epochsales.com"  target="_blank" className="email-link">epoch@epochsales.com</a></p>
+  <p>512-555-5555</p>
+
+</div>
+</div>
+</Footer>
+</div>
+
+
+
+<Header inverted as='h4' content='About' />
+<List link inverted>
+  <List.Item as='a'>Sitemap</List.Item>
+  <List.Item as='a'>Contact Us</List.Item>
+  <List.Item as='a'>Religious Ceremonies</List.Item>
+  <List.Item as='a'>Gazebo Plans</List.Item>
+</List>
+</Grid.Column>
+<Grid.Column width={3}>
+<Header inverted as='h4' content='Services' />
+<List link inverted>
+  <List.Item as='a'>Banana Pre-Order</List.Item>
+  <List.Item as='a'>DNA FAQ</List.Item>
+  <List.Item as='a'>How To Access</List.Item>
+  <List.Item as='a'>Favorite X-Men</List.Item>
+</List>
+</Grid.Column>
+<Grid.Column width={7}>
+<Header style={{width: 75}} as='h4' inverted>
+  <video style={{height: 140, width: 300, color: 'white'}} src="./images/epoch.mov"></video><br/>
+</Header>
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+  <img style={{maxWidth:'50%'}} src={item.image_url} />
+
+    <section>{item.name}</section>
+    <p>
+      <span className='date'>{item.price}</span>
+    </p>
+    <div>{item.category}</div>
+    <Button color='green' item={item} value={this.state.data.name} onClick={this.handleClick}>Add to Cart</Button>
+
+</div>

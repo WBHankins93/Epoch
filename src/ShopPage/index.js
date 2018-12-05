@@ -6,6 +6,7 @@ import './ShopCSS.css';
 import FooterPage from '../Footer';
 import WatchList from '../ShowWatches';
 import NavBar from '../NavBar';
+import ShoppingCart from '../ShoppingCart';
 
 
 class ShopPage extends Component {
@@ -16,9 +17,10 @@ class ShopPage extends Component {
         <div className="watchBox">
           <h1>Shop Our Products!</h1>
               <WatchList />
+              <ShoppingCart />
         </div>
 
-        
+
 
       </div>
     );

@@ -5,8 +5,8 @@ import './Footer.css';
 class FooterPage extends React.Component {
 render() {
 return (
-  <div>
-<Footer style={{border:'4px solid black'}} className="font-small pt-4 mt-4">
+
+<Footer style={{border:'4px solid black'}} >
 
 
 
@@ -37,7 +37,7 @@ return (
   </div>
 </div>
 </Footer>
-</div>
+
 );
 }
 }

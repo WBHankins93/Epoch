@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
 
   try {
     const createdWatches = await Products.create(req.body);
-    console.log(createdWatches)
+    console.log(createdWatches, 'MIRZA')
     res.json({
       status: 200,
       data: createdWatches

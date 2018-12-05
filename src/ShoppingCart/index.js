@@ -14,23 +14,11 @@ class ShoppingCart extends Component {
   }
 
   addToCart = async (product, e) => {
-    e.preventDefault();
-    swal(product.name + ' Has Been Added In Your Cart!');
-    let jsonObj = {
-      name: product.name,
-      price: product.price,
-      category: product.category,
-      image_url: product.image_url,
-    }
     try {
-      const buyWatches = await fetch('http://localhost:9000/', {
-        method: 'POST',
-        credentials: 'include',
-        body: JSON.stringify(jsonObj),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
+      const buyWatches = await fetch('http://localhost:9000/');
+      const buyJson = await buyWatches.json();
+      console.log(buyJson, 'RUNITUP');
+      return buyJson;
     } catch(err){
       console.log('error')
       console.log(err)
@@ -48,24 +36,7 @@ class ShoppingCart extends Component {
   }
 
   render(){
-    let cartData;
-    if(this.state.cartData.data) {
 
-
-    cartData = this.state.cartData.data.map((product, index) => {
-
-      return(
-        <div key={product._id}>
-        <button class="ui inverted black button">Delete</button>
-          <p>{product.image_url}</p>
-          <p>{product.name}</p>
-          <p>{product.price}</p>
-          <p>{product.category}</p>
-        </div>
-      );
-    })
-
-  }
     return(
       <div>
         <NavBar />
@@ -76,9 +47,8 @@ class ShoppingCart extends Component {
         <br/>
         <br/>
         <br/>
-        <h1 style={{'fontSize':'60px'}} >Shopping Cart</h1>
+        <h1 style={{'fontSize':'60px', color:'white'}} >Shopping Cart</h1>
         <ul>
-          <li>{this.CartData}</li>
 
         </ul>
         </div>

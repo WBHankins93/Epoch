@@ -3,6 +3,7 @@ import LandingPage from './LandingPage';
 import HomePage from './HomePage';
 import ShopPage from './ShopPage';
 import ShoppingCart from './ShoppingCart';
+import LoginForm from './Login';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path="/home" component={HomePage}/>
           <Route exact path="/shop" component={ShopPage}/>
           <Route exact path="/cart" component={ShoppingCart}/>
+          <Route exact path="/login" component={LoginForm}/>
         </Switch>
         </Provider>
       </div>
