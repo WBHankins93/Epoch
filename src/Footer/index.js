@@ -26,7 +26,7 @@ return (
     <p>Order Status</p>
     <p>FAQs</p>
     <p>Warranty</p>
-    <p>Returns & Exchanges</p>
+    
   </div>
   <div class="four wide column">
     <h3>Contact Us</h3>

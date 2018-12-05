@@ -6,10 +6,15 @@
 }
 
 Footer {
-  position: fixed;
-  bottom: 0%;
-  width: 100%;
-
+  background: grey;
+  position: absolute;
+  right: 0;
+  margin-top: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
 
 ul {

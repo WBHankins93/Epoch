@@ -1,43 +1,39 @@
 import React, { Component } from 'react';
-import { Container, Menu, Segment, Icon, Label } from 'semantic-ui-react';
+import { Button, Container, Menu, Segment, Icon, Image, Header, Label } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
 class NavBar extends Component {
-  super(){
+  render(){
+    const mobile = '1em';
     return(
-      <Container text>
-          <Header
-            as='h1'
-            inverted
-            content='Shop Epoch Today!'
+      <Menu
+        fixed={'top'}
+        background='grey'
 
-            style={{
-              fontSize: mobile ? '2em' : '4em',
-              fontWeight: 'normal',
-              marginBottom: 0,
-              marginTop: mobile ? '1.5em' : '3em',
-            }}
-          />
-          <Header
-            as='h2'
-            content=''
+        size='large'
+      >
+        <Container>
+          <Menu.Item as='a' active>
+            <Image style={{width: 180, height: 30, float: 'left'}} href="/" src="../images/EpochLogo_1.png"/>
+          </Menu.Item>
 
-            style={{
-              fontSize: mobile ? '1.5em' : '1.7em',
-              fontWeight: 'normal',
-              marginTop: mobile ? '0.5em' : '1.5em',
-            }}
-          />
-          <Button primary href="/shop" size='huge'>
-            Start Here
-            <Icon name='right arrow' />
-          </Button>
+          <Menu.Item href='/home'>Home</Menu.Item>
+          <Menu.Item href='/shop'>Shop</Menu.Item>
+          <Menu.Item position='right'>
+            <Button as='a' >
+              Log in
+            </Button>
+            <Button as='a' style={{ marginLeft: '0.5em' }}>
+              Sign Up
+            </Button>
+          </Menu.Item>
+          <Menu.Item href='/cart'><Icon name='shopping cart' color='black' size='large'/></Menu.Item>
         </Container>
-
-
+      </Menu>
     )
+}
+}
 
 
-
-  export NavBar;
+  export default NavBar;

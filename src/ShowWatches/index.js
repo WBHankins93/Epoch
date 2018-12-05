@@ -113,7 +113,7 @@ class WatchList extends Component {
             <span className='date'>{item.price}</span>
           </Card.Meta>
           <Card.Description>{item.category}</Card.Description>
-          <Button color='green'>Add to Cart</Button>
+          <Button color='green' >Add to Cart</Button>
         </Card.Content>
       </Card>
     )

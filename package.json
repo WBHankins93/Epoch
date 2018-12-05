@@ -20,6 +20,7 @@
     "react-responsive-carousel": "^3.1.43",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
+    "react-shopping-cart-starter-kit": "^0.1.0",
     "redux": "^4.0.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.83.0"

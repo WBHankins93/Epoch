@@ -16,42 +16,12 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-
+import NavBar from '../NavBar'
+import PicSlide from '../Carousel'
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
  */
-
- const HomepageHeading = ({ mobile }) => (
-   <Container text>
-     <Header
-       as='h1'
-       content='Imagine-a-Company'
-
-       style={{
-         fontSize: mobile ? '2em' : '4em',
-         fontWeight: 'normal',
-         marginBottom: 0,
-         marginTop: mobile ? '1.5em' : '3em',
-       }}
-     />
-     <Header
-       as='h2'
-       content='Do whatever you want when you want to.'
-       inverted
-       style={{
-         fontSize: mobile ? '1.5em' : '1.7em',
-         fontWeight: 'normal',
-         marginTop: mobile ? '0.5em' : '1.5em',
-       }}
-     />
-     <Button primary size='huge'>
-       Get Started
-       <Icon name='right arrow' />
-     </Button>
-   </Container>
- )
-
 
 
 /* Heads up!
@@ -89,23 +59,10 @@ class DesktopContainer extends Component {
               secondary={!fixed}
               size='large'
             >
-              <Container>
-                <Menu.Item as='a' active>
-                  <Image style={{width: 180, height: 30, float: 'left'}} src="../images/logo-noBack.png"/>
-                </Menu.Item>
+              <NavBar />
 
-                <Menu.Item href='/home'>Home</Menu.Item>
-                <Menu.Item href='/shop'>Shop</Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' >
-                    Log in
-                  </Button>
-                  <Button as='a'  primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
-                </Menu.Item>
-              </Container>
             </Menu>
+            <PicSlide />
 
           </Segment>
         </Visibility>
@@ -234,6 +191,7 @@ const HomepageLayout = () => (
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
         <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+        <Image style={{'max-height': '100px'}} src="../images/Watch-Men-copy.png" />
           <Header as='h3' style={{ fontSize: '2em' }}>
             <Button href="/shop" size='huge'>COLLECTIONS</Button>
           </Header>
@@ -303,7 +261,7 @@ const HomepageLayout = () => (
               <Header style={{width: 75}} as='h4' inverted>
                 <video style={{height: 140, width: 300, color: 'white'}} src="./images/epoch.mov"></video><br/>
               </Header>
-            
+
             </Grid.Column>
           </Grid.Row>
         </Grid>

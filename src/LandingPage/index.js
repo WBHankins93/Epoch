@@ -8,24 +8,15 @@ class LandingPage extends Component {
       <div className="App">
 
       <div>
-      <img class="image" alt="" src="https://media.giphy.com/media/874Z2F7ZmX1GWbRaWw/giphy.gif" />
+      <img class="image" alt="" src="../images/EpochLogo_1.png" />
       </div>
         <p>"A period of time in history or a person's life, typically one marked by notable events or particular characteristics."</p>
 
-
-
         <br/>
         <br/>
+
           <div>
-            <Button class='ui primary button' role='button'>
-              Primary
-            </Button>
-            <Button class='ui secondary button' role='button'>
-              Secondary
-            </Button>
-          </div>
-          <div>
-          <Button size='massive'>Massive</Button>
+          <Button href="/home" size='massive'>Enter</Button>
           </div>
 
       </div>

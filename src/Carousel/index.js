@@ -6,7 +6,7 @@ class PicSlide extends Component {
   render() {
     return(
       <div className="caroDisplay">
-        <Carousel className="cara"  autoPlay>
+        <Carousel  autoPlay>
         <div>
           <img src="http://www.watchkings.co.uk/wp-content/themes/watchkings/images/banner.jpg" />
           <p className="legend">Legend 1</p>
