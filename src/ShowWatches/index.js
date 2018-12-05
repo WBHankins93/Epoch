@@ -102,19 +102,9 @@ class WatchList extends Component {
   }
   }
 
-  handleClick = () => {
-    // console.log(this.state.data[2].name)
-    const x = this.state.data.map((i) => {
+  handleClick = (e, item) => {
+    console.log(item)
 
-      this.setState({
-        data: i
-      })
-      console.log([i],'dfghjk')
-
-    })
-    // console.log(this.state.data);
-    // const x = [...this.state.data]
-    // console.log(x)
 
   }
 
@@ -133,7 +123,7 @@ class WatchList extends Component {
             <span className='date'>{item.price}</span>
           </Card.Meta>
           <Card.Description>{item.category}</Card.Description>
-          <Button color='green' value={this.state.data.name} onClick={this.handleClick}>Add to Cart</Button>
+          <Button color='green' item={item} value={this.state.data.name} onClick={this.handleClick}>Add to Cart</Button>
         </Card.Content>
       </Card>
     )

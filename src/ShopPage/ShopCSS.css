@@ -1,6 +1,7 @@
 .watchBox {
   border: 3px solid black;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   margin-top: 90px;
 
 }

@@ -15,14 +15,10 @@ class ShopPage extends Component {
         <NavBar />
         <div className="watchBox">
           <h1>Shop Our Products!</h1>
-
-            <div>
               <WatchList />
-            </div>
-
         </div>
 
-        <FooterPage />
+        
 
       </div>
     );
