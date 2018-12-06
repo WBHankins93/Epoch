@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "mdbreact";
 import { Header, Container, Grid, Segment, List, Item } from 'semantic-ui-react';
 import './Footer.css';
 

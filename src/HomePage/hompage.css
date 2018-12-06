@@ -1,0 +1,16 @@
+.gridPic {
+  /* max-height: 30%;
+  max-width: 30%; */
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 8px 10px 5px grey;
+}
+
+#column {
+  display: flex;
+  text-align: center;
+}
+
+#menWomen {
+  box-shadow: 8px 10px 5px grey;
+}

@@ -18,6 +18,7 @@ import {
 } from 'semantic-ui-react'
 import NavBar from '../NavBar'
 import PicSlide from '../Carousel'
+import './hompage.css';
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
@@ -192,52 +193,52 @@ ResponsiveContainer.propTypes = {
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '8em 0em' }} vertical>
+    <Header textAlign='center' as='h3' style={{ fontSize: '2em' }}>
+      Shop Our Collection Today!
+    </Header>
       <Grid container stackable verticalAlign='middle'>
-        <Grid.Row>
-          <Grid.Column width={6}>
-            <Header textAlign='center' as='h3' style={{ fontSize: '2em' }}>
-              Shop Our Collection Today!
-            </Header>
-            <Image bordered rounded size='large' src='https://precisionwatches.com/wp-content/uploads/2018/02/Omega-banner-precision-watches-new.jpg' />
+      <Grid.Row>
+        <Grid.Column width={7}>
 
-            <Grid.Column textAlign='left'>
-              <Button basic color='black' href="/shop" size='massive'>Shop Mens</Button>
-            </Grid.Column>
-          </Grid.Column>
+          <Image id="menWomen" bordered rounded size='large' src='https://precisionwatches.com/wp-content/uploads/2018/02/Omega-banner-precision-watches-new.jpg' />
 
-          <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='http://www.americanswiss.co.za/docs/4308/Gifts%20LandingPageBanners2_x678_80.jpg' />
-          </Grid.Column>
-        </Grid.Row>
+        </Grid.Column>
 
-        <Grid.Row>
-          <Grid.Column floated='right'>
-            <Button basic color='black' href="/shop" size='massive'>Shop Womens</Button>
-          </Grid.Column>
-          <Grid.Column textAlign='left'>
-            <Button basic color='black' href="/shop" size='massive'>Shop Mens</Button>
-          </Grid.Column>
-        </Grid.Row>
+        <Grid.Column floated='right' width={7}>
+          <Image id="menWomen" bordered rounded size='large' src='http://www.americanswiss.co.za/docs/4308/Gifts%20LandingPageBanners2_x678_80.jpg' />
+        </Grid.Column>
+
+      </Grid.Row>
+
+      <Grid.Row>
+        <Grid.Column floated='right' width={8}>
+          <Button basic color='black' href="/shop" size='massive'>Shop Womens</Button>
+        </Grid.Column>
+        <Grid.Column floated='left' width={8}>
+          <Button basic color='black' href="/shop" size='massive'>Shop Mens</Button>
+        </Grid.Column>
+      </Grid.Row>
       </Grid>
     </Segment>
 
     <Segment style={{ padding: '5em 0em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
-        <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-        <Image style={{'max-height': '100px'}} src="../images/Watch-Men-copy.png" />
-          <Header as='h3' style={{ fontSize: '2em' }}>
-            <Button color='black' href="/shop" size='huge'>COLLECTIONS</Button>
-          </Header>
-          <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
-        </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+          <Image rounded className="gridPic"  src="https://cdn.squaremile.com/gallery/59ef6862637b4.jpeg" />
+            <Header as='h3' style={{ fontSize: '2em' }}>
+              <Button color='black' href="/shop" size='huge'>COLLECTIONS</Button>
+            </Header>
+          </Grid.Column>
+          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+          <Image rounded className="gridPic" src="https://images.askmen.com/1080x540/2016/08/15-030953-best_watch_straps.jpg" />
             <Header as='h3' style={{ fontSize: '2em' }}>
               <Button color='black' href="/shop" size='huge'>ACCESSORIES</Button>
             </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+
+          <Image rounded className="gridPic" src="http://www.uncleseiko.com/uploads/7/6/8/5/76851891/s378755113293535586_p37_i2_w640.jpeg" />
             <Header as='h3' style={{ fontSize: '2em' }}>
               <Button color='black' href="/shop" size='huge'>SALE</Button>
             </Header>
@@ -251,17 +252,23 @@ const HomepageLayout = () => (
       <Container text>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
-        <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+        <Grid.Column id="column1" style={{ paddingBottom: '5em', paddingTop: '5em' }}>
           <Header as='h3' style={{ fontSize: '2em' }}>
             Our Mission
           </Header>
-          <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
+          <p style={{ fontSize: '1em', paddingTop: '5%' }}>“To represent the most refined qualities of Western “Art de Vivre” (art of living) around the world; to be synonymous with both elegance and creativity; to blend tradition and innovation, and kindle dream and fantasy.”</p>
         </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+          <Grid.Column id="column2" style={{ paddingBottom: '5em', paddingTop: '5em', textAlign: 'center' }}>
+          <div id="column2" style={{display:'inline-block'}}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              About Epoch
+              Our Core Values
             </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
+            <ul style={{ fontSize: '1em', paddingTop: '5%' }}>
+              <li>Providing the best possible services to our retailers and consumers, and recognizing their importance to our continued success.</li><br/>
+              <li>Constantly striving for excellence. We believe our people are critical to the achievement of this goal, and their continuous development is essential.</li><br/>
+              <li>Treating everyone with respect, and making integrity the core of our actions and relationships. Striving to have employees, vendors and retailers feel like they are part of the same team.</li><br/>
+            </ul>
+          </div>
           </Grid.Column>
 
         </Grid.Row>
@@ -274,7 +281,7 @@ const HomepageLayout = () => (
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='About' />
+              <Header inverted as='h3' content='About' />
               <List link inverted>
                 <List.Item as='a'>Sitemap</List.Item>
                 <List.Item as='a'>Contact Us</List.Item>
@@ -283,7 +290,7 @@ const HomepageLayout = () => (
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
-              <Header inverted as='h4' content='Services' />
+              <Header inverted as='h3' content='Services' />
               <List link inverted>
                 <List.Item as='a'>Banana Pre-Order</List.Item>
                 <List.Item as='a'>DNA FAQ</List.Item>
