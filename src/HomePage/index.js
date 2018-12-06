@@ -45,9 +45,8 @@ import PicSlide from '../Carousel'
          marginTop: mobile ? '0.5em' : '1.5em',
        }}
      />
-     <Button primary size='huge'>
-       
-       <Icon name='arrow down' />
+     <Button inverted size='huge' href="/shop">
+       SHOP NOW
      </Button>
    </Container>
  )
@@ -199,21 +198,24 @@ const HomepageLayout = () => (
             <Header textAlign='center' as='h3' style={{ fontSize: '2em' }}>
               Shop Our Collection Today!
             </Header>
-            <Image bordered rounded size='large' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GRfjdRUydyerkVF6L4cVme5zudC2ZjNbASNMIOI5-F7O79J8' />
+            <Image bordered rounded size='large' src='https://precisionwatches.com/wp-content/uploads/2018/02/Omega-banner-precision-watches-new.jpg' />
 
             <Grid.Column textAlign='left'>
-              <Button href="/shop" size='huge'>Shop Mens</Button>
+              <Button basic color='black' href="/shop" size='massive'>Shop Mens</Button>
             </Grid.Column>
           </Grid.Column>
 
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GRfjdRUydyerkVF6L4cVme5zudC2ZjNbASNMIOI5-F7O79J8' />
+            <Image bordered rounded size='large' src='http://www.americanswiss.co.za/docs/4308/Gifts%20LandingPageBanners2_x678_80.jpg' />
           </Grid.Column>
         </Grid.Row>
 
         <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button href="/shop" size='huge'>Shop Womens</Button>
+          <Grid.Column floated='right'>
+            <Button basic color='black' href="/shop" size='massive'>Shop Womens</Button>
+          </Grid.Column>
+          <Grid.Column textAlign='left'>
+            <Button basic color='black' href="/shop" size='massive'>Shop Mens</Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -225,19 +227,19 @@ const HomepageLayout = () => (
         <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
         <Image style={{'max-height': '100px'}} src="../images/Watch-Men-copy.png" />
           <Header as='h3' style={{ fontSize: '2em' }}>
-            <Button href="/shop" size='huge'>COLLECTIONS</Button>
+            <Button color='black' href="/shop" size='huge'>COLLECTIONS</Button>
           </Header>
           <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
         </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              <Button href="/shop" size='huge'>ACCESSORIES</Button>
+              <Button color='black' href="/shop" size='huge'>ACCESSORIES</Button>
             </Header>
             <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              <Button href="/shop" size='huge'>SALE</Button>
+              <Button color='black' href="/shop" size='huge'>SALE</Button>
             </Header>
 
           </Grid.Column>

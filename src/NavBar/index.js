@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Container, Menu, Segment, Icon, Image, Header, Label } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import CartModal from '../CartModal';
 import '../App.css';
 
 class NavBar extends Component {
@@ -22,10 +21,10 @@ class NavBar extends Component {
           <Menu.Item href='/home'>Home</Menu.Item>
           <Menu.Item href='/shop'>Shop</Menu.Item>
           <Menu.Item position='right'>
-            <Button href='/login' >
+            <Button basic color='black' href='/login' >
               Log in
             </Button>
-            <Button href='/register' style={{ marginLeft: '0.5em' }}>
+            <Button basic color='black' href='/register' style={{ marginLeft: '0.5em' }}>
               Sign Up
             </Button>
           </Menu.Item>
