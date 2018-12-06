@@ -3,6 +3,7 @@
   margin: 20px;
   justify-content: flex-start;
   align-items: flex-end;
+  border: 2px solid black;
 }
 
 Card {

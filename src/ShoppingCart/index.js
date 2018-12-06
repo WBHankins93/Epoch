@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import NavBar from '../NavBar';
 import swal from '@sweetalert/with-react';
-import FooterPage from '../Footer'
+import FooterPage from '../Footer';
+import './shoppingcart.css';
 
 
 class ShoppingCart extends Component {
@@ -40,7 +41,7 @@ class ShoppingCart extends Component {
     return(
       <div>
         <NavBar />
-        <div>
+        <div className="cartBox">
         <br/>
         <br/>
         <br/>
@@ -52,7 +53,7 @@ class ShoppingCart extends Component {
 
         </ul>
         </div>
-<FooterPage />
+          <FooterPage />
       </div>
     )
   }

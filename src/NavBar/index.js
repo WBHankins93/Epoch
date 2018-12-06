@@ -24,7 +24,7 @@ class NavBar extends Component {
             <Button href='/login' >
               Log in
             </Button>
-            <Button href='/login' style={{ marginLeft: '0.5em' }}>
+            <Button href='/register' style={{ marginLeft: '0.5em' }}>
               Sign Up
             </Button>
           </Menu.Item>

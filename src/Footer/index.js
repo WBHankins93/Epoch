@@ -1,43 +1,46 @@
 import React from "react";
-import { Col, Container, Row, Footer } from "mdbreact";
+import Footer from "mdbreact";
+import { Header, Container, Grid, Segment, List, Item } from 'semantic-ui-react';
 import './Footer.css';
 
 class FooterPage extends React.Component {
 render() {
 return (
 
-<Footer style={{border:'4px solid black'}} >
+<div>
+<Segment inverted vertical style={{ padding: '5em 0em' }}>
+  <Container>
+    <Grid divided inverted stackable>
+      <Grid.Row>
+        <Grid.Column width={3}>
+          <Header inverted as='h4' content='About' />
+          <List link inverted>
+            <List.Item as='a'>Sitemap</List.Item>
+            <List.Item as='a'>Contact Us</List.Item>
+            <List.Item as='a'>Religious Ceremonies</List.Item>
+            <List.Item as='a'>Gazebo Plans</List.Item>
+          </List>
+        </Grid.Column>
+        <Grid.Column width={3}>
+          <Header inverted as='h4' content='Services' />
+          <List link inverted>
+            <List.Item>Email: <a href="mailto:epoch@epochsales.com"  target="_blank" className="email-link">epoch@epochsales.com</a></List.Item>
+            <List.Item as='a'>512-555-5555</List.Item>
+            <List.Item as='a'>How To Access</List.Item>
+            <List.Item as='a'>Favorite X-Men</List.Item>
+          </List>
+        </Grid.Column>
+        <Grid.Column width={7}>
+          <Header style={{width: 75}} as='h4' inverted>
+            <video style={{height: 140, width: 300, color: 'white'}} src="./images/epoch.mov"></video><br/>
+          </Header>
 
-
-
-  <div className="ui grid size wholeFoot">
-  <div className="four wide column logoFoot">
-    <img className="footerLogo" src="./images/EpochLogo_1.png"></img><br/>
-    <p>
-      Your time is now.
-    </p>
-  </div>
-  <div className="four wide column">
-    <p><a href="#">Blog</a></p>
-    <p><a href="#">Careers</a></p>
-    <p><a href="#">Join Us!</a></p>
-  </div>
-  <div className="four wide column">
-    <h3>Customer Care</h3>
-    <p>Order Status</p>
-    <p>FAQs</p>
-    <p>Warranty</p>
-
-  </div>
-  <div className="four wide column">
-    <h3>Contact Us</h3>
-    <p>Email: <a href="mailto:epoch@epochsales.com"  target="_blank" className="email-link">epoch@epochsales.com</a></p>
-    <p>512-555-5555</p>
-
-  </div>
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
+  </Container>
+</Segment>
 </div>
-</Footer>
-
 );
 }
 }

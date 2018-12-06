@@ -17,7 +17,7 @@ class ShopPage extends Component {
         <div className="watchBox">
           <h1>Shop Our Products!</h1>
               <WatchList />
-              <ShoppingCart />
+              <FooterPage />
         </div>
 
 
