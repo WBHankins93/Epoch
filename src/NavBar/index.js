@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Container, Menu, Segment, Icon, Image, Header, Label } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import CartModal from '../CartModal';
 import '../App.css';
 
 class NavBar extends Component {
