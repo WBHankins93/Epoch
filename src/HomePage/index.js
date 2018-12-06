@@ -18,6 +18,7 @@ import {
 } from 'semantic-ui-react'
 import NavBar from '../NavBar'
 import PicSlide from '../Carousel'
+import FooterPage from '../Footer'
 import './hompage.css';
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -212,10 +213,10 @@ const HomepageLayout = () => (
 
       <Grid.Row>
         <Grid.Column floated='right' width={8}>
-          <Button basic color='black' href="/shop" size='massive'>Shop Womens</Button>
+          <Button basic color='black' href="/shop" size='massive'>Shop Mens</Button>
         </Grid.Column>
         <Grid.Column floated='left' width={8}>
-          <Button basic color='black' href="/shop" size='massive'>Shop Mens</Button>
+          <Button basic color='black' href="/shop" size='massive'>Shop Womens</Button>
         </Grid.Column>
       </Grid.Row>
       </Grid>
@@ -276,38 +277,7 @@ const HomepageLayout = () => (
       </Container>
     </Segment>
 
-    <Segment inverted vertical style={{ padding: '5em 0em' }}>
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as='h3' content='About' />
-              <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
-                <List.Item as='a'>Gazebo Plans</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as='h3' content='Services' />
-              <List link inverted>
-                <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
-                <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header style={{width: 75}} as='h4' inverted>
-                <video style={{height: 140, width: 300, color: 'white'}} src="./images/epoch.mov"></video><br/>
-              </Header>
-
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
+    <FooterPage />
   </ResponsiveContainer>
 )
 

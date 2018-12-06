@@ -14,19 +14,19 @@ return (
         <Grid.Column width={3}>
           <Header inverted as='h4' content='About' />
           <List link inverted>
-            <List.Item as='a'>Sitemap</List.Item>
-            <List.Item as='a'>Contact Us</List.Item>
-            <List.Item as='a'>Religious Ceremonies</List.Item>
-            <List.Item as='a'>Gazebo Plans</List.Item>
+            <List.Item><a href="https://github.com/WBHankins93/epoch">GitHub</a></List.Item>
+            <List.Item><a href="https://ben_hankins.surge.sh">My Portfolio</a></List.Item>
+            <List.Item>World Domination</List.Item>
+            <List.Item>Gazebo Plans</List.Item>
           </List>
         </Grid.Column>
         <Grid.Column width={3}>
-          <Header inverted as='h4' content='Services' />
+          <Header inverted as='h4' content='Contact' />
           <List link inverted>
             <List.Item>Email: <a href="mailto:epoch@epochsales.com"  target="_blank" className="email-link">epoch@epochsales.com</a></List.Item>
-            <List.Item as='a'>512-555-5555</List.Item>
-            <List.Item as='a'>How To Access</List.Item>
-            <List.Item as='a'>Favorite X-Men</List.Item>
+            <List.Item>512-555-5555</List.Item>
+            <List.Item>600 Congress Ave. <br/>(Starbucks, not WeWork)</List.Item>
+            <List.Item>Austin, TX 78701</List.Item>
           </List>
         </Grid.Column>
         <Grid.Column width={7}>
