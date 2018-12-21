@@ -135,9 +135,9 @@ class WatchList extends Component {
         <img style={{maxWidth:'50%'}} src={item.image_url} />
 
           <section>{item.name}</section>
-          <p>
+          
             <span className='date'>{item.price}</span>
-          </p>
+
           <div>{item.category}</div>
           <Button color='green' item={item} value={this.state.data.name} onClick={this.handleClick}>Add to Cart</Button>
 

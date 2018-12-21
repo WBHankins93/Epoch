@@ -31,7 +31,7 @@ return (
         </Grid.Column>
         <Grid.Column width={7}>
           <Header style={{width: 75}} as='h4' inverted>
-            <video style={{height: 140, width: 300, color: 'white'}} src="./images/epoch.mov"></video><br/>
+            <img style={{height: 90, width: 300, color: 'white'}} src="./images/epoch_footer.png"></img><br/>
           </Header>
 
         </Grid.Column>

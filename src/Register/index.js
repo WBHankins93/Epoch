@@ -46,7 +46,7 @@ const RegisterForm = () => (
             />
 
             <Button color='black' fluid size='large' href="/home">
-              Login
+              Join Us!
             </Button>
           </Segment>
         </Form>

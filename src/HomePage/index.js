@@ -17,7 +17,6 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 import NavBar from '../NavBar'
-import PicSlide from '../Carousel'
 import FooterPage from '../Footer'
 import './hompage.css';
 /* eslint-disable react/no-multi-comp */
